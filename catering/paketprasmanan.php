@@ -11,7 +11,6 @@
 <body>
     <section class="paket">
         <h1>Pilih Paket Prasmanan</h1>
-
         <div class="paket-grid">
             <div class="card">
                 <div class="img">
