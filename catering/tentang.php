@@ -66,7 +66,7 @@
           <div class="navbar-nav mx-auto">
             <a class="nav-link" aria-current="page" href="homebenner.php">Home</a>
             <a class="nav-link active" href="tentang.php">Tentang Kami</a>
-            <a class="nav-link" href="menu.html">Menu</a>
+            <a class="nav-link" href="menu.php">Menu</a>
             <a class="nav-link" href="keunggulan.php">Keunggulan</a>
             <a class="nav-link" href="kontak_kami.php">Kontak Kami</a>
             <!-- Mobile (text) -->

@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paket Prasmanan</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="rasa.css">
 </head>
 <body>
     <section class="paket">
         <h1>Pilih Paket Prasmanan</h1>
         <div class="paket-grid">
+
+            <form action="paketprasmanan2.php" method="POST">
+                <input type="hidden" name="nama_paket" value="Paket Normal">
+                <input type="hidden" name="harga" value="75000">
             <div class="card">
                 <div class="img">
                     <img src="imgmenu/nasigurih.jpg" alt="Nasi Liwet">
@@ -29,10 +33,12 @@
                     <li>Snack</li>
                     <li>Minuman</li> <br>
                 </ul>
-                <a href="paketprasmanan2.php">
-                    <button>Pilih Paket</button>
-                </a>
+                <button type="submit" class="btn btn-success w-100">Pilih Paket</button>
             </div>
+            </form>
+            <form action="paketprasmanan3.php" method="POST">
+                <input type="hidden" name="nama_paket" value="Paket Premium">
+                <input type="hidden" name="harga" value="130000">
             <div class="card">
                 <div class="img">
                     <img src="imgmenu/nasiliwet.png" alt="Nasi Gurih">
@@ -51,10 +57,9 @@
                     <li>Snack & Dessert</li>
                     <li>Minuman</li>
                 </ul>
-                <a href="paketprasmanan3.php">
-                    <button>Pilih Paket</button>
-                </a>
+                <button type="submit" class="btn btn-success w-100">Pilih Paket</button>
             </div>
+            </form>
 
         </div>
     </section>

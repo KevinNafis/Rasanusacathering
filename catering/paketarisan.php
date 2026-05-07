@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paket Arisan</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="rasa.css">
 </head>
 <body>
@@ -13,6 +13,10 @@
         <h1>Pilih Paket Arisan</h1>
 
         <div class="paket-grid">
+            <form action="paketarisan1.php" method="POST">
+                <input type="hidden" name="nama_paket" value="Paket Standar">
+                <input type="hidden" name="harga" value="40000">
+
             <div class="card">
                 <div class="img">
                 <img src="imgmenu/nasiuduk.jpg" alt="Box Nasi">
@@ -30,10 +34,13 @@
                         <li>Snack</li>
                         <li>Es Teh</li><br>
                     </ul>
-                <a href="paketarisan1.php">
-                    <button>Pilih Paket</button>
-                </a>
+                    <button type="submit" class="btn btn-success w-100">Pilih Paket</button>
             </div>
+            </form>
+
+            <form action="paketarisan2.php" method="POST">
+                <input type="hidden" name="nama_paket" value="Paket Normal">
+                <input type="hidden" name="harga" value="65000">
             <div class="card">
                 <div class="img">
                     <img src="imgmenu/sate.jpg" alt="Box Nasi">
@@ -52,10 +59,13 @@
                     <li>Puding</li>
                     <li>Minuman</li>
                 </ul>
-                <a href="paketarisan2.php">
-                    <button>Pilih Paket</button>
-                </a>
+                <button type="submit" class="btn btn-success w-100">Pilih Paket</button>
             </div>
+            </form>
+
+            <form action="paketarisan3.php" method="POST">
+                <input type="hidden" name="nama_paket" value="Paket Premium">
+                <input type="hidden" name="harga" value="99000">
             <div class="card">
                 <div class="img">
                     <img src="imgmenu/balado.jpg" alt="Box Nasi">
@@ -74,12 +84,10 @@
                     <li>Puding</li>
                     <li>Minuman</li>
                 </ul>
-                <a href="paketarisan3.php">
-                    <button>Pilih Paket</button>
-                </a>
+                <button type="submit" class="btn btn-success w-100">Pilih Paket</button>
             </div>
+            </form>
         </div>
     </section>
-    <p>tes1</p>
 </body>
 </html>

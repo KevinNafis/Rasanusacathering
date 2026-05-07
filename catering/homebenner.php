@@ -67,7 +67,7 @@
           <div class="navbar-nav mx-auto">
             <a class="nav-link active" aria-current="page" href="homebenner.php">Home</a>
             <a class="nav-link" href="tentang.php">Tentang Kami</a>
-            <a class="nav-link" href="menu.html">Menu</a>
+            <a class="nav-link" href="menu.php">Menu</a>
             <a class="nav-link" href="keunggulan.php">Keunggulan</a>
             <a class="nav-link" href="kontak_kami.php">Kontak Kami</a>
             <!-- Mobile (text) -->
@@ -113,6 +113,9 @@
             <p class="mb-4">Nikmati diskon menarik untuk tiap paket</p>
             <div  class="row g-4">
                 <div class="col-md-4">
+                    <form action="paketultah3.php" method="POST">
+                      <input type="hidden" name="nama_paket" value="Paket Premium">
+                      <input type="hidden" name="harga" value="119000">
                     <div class="card shadow position-relative">
                         <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
                         <img src="imgmenu/kuemahal.jpeg" class="card-img-top" width="100%" height="275">
@@ -122,13 +125,15 @@
                             <span class="text-muted text-decoration-line-through">Rp 119.000</span><br>
                             <span class="text-danger fw-bold">Rp 95.200</span>
                             </p>
-                            <a href="paketultah3.php">
-                            <button class="btn btn-success w-100">+ Pesan</button>
-                            </a>
+                            <button type="submit" class="btn btn-success w-100">+ Pesan</button>
                         </div>
                     </div>
+                    </form>
                 </div>
                 <div class="col-md-4">
+                    <form action="paketprasmanan3.php" method="POST">
+                      <input type="hidden" name="nama_paket" value="Paket Premium">
+                      <input type="hidden" name="harga" value="130000">
                     <div class="card shadow position-relative">
                         <span class="badge bg-danger position-absolute top-0 start-0 m-2">-30%</span>
                         <img src="imgmenu/es.png" class="card-img-top" width="100%" height="275">
@@ -138,13 +143,15 @@
                             <span class="text-muted text-decoration-line-through">Rp 130.000</span><br>
                             <span class="text-danger fw-bold">Rp 84.500</span>
                             </p>
-                            <a href="paketprasmanan3.php">
-                            <button class="btn btn-success w-100">+ Pesan</button>
-                            </a>
+                            <button type="submit" class="btn btn-success w-100">+ Pesan</button>
                         </div>
                     </div>
+                    </form>
                 </div>
                 <div class="col-md-4">
+                    <form action="paketarisan3.php" method="POST">
+                      <input type="hidden" name="nama_paket" value="Paket Premium">
+                      <input type="hidden" name="harga" value="99000">
                     <div class="card shadow position-relative">
                         <span class="badge bg-danger position-absolute top-0 start-0 m-2">-40%</span>
                         <img src="imgmenu/balado.jpg" class="card-img-top" width="100%" height="275">
@@ -154,11 +161,10 @@
                             <span class="text-muted text-decoration-line-through">Rp 99.000</span><br>
                             <span class="text-danger fw-bold">Rp 59.400</span>
                             </p>
-                             <a href="paketarisan3.php">
-                            <button class="btn btn-success w-100">+ Pesan</button>
-                            </a>
+                            <button type ="submit" class="btn btn-success w-100">+ Pesan</button>
                         </div>
                     </div>
+                  </form>
                 </div>
             </div>
         </div>

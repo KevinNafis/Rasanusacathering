@@ -1,48 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 
 <head>
-    <title>Rasa Nusa Catering</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Promo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="rasa.css">
+    <link rel="stylesheet" href="home.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <style>
+      .bi {
+        font-size: 48px;
+        color: #ff5722;
+      }
+      a {
+        text-decoration: none;
+      }
+      .a1 {
+        text-decoration: none;
+        color: #000;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .a2 {
+        text-decoration: none;
+        color: #000;
+        margin-top: 8px;
+        margin-bottom: 5px;
+      }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg sticky-top">
-        <div class="container">
-           
-    
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="homebenner.php">Home</a></li>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="homebenner.php">
+          <img src="headerfooter/logorasa.jpeg" alt="" height="120px" width="auto" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto">
+            <a class="nav-link" aria-current="page" href="homebenner.php">Home</a>
+            <a class="nav-link" href="tentang.php">Tentang Kami</a>
+            <a class="nav-link active" href="menu.php">Menu</a>
+            <a class="nav-link" href="keunggulan.php">Keunggulan</a>
+            <a class="nav-link" href="kontak_kami.php">Kontak Kami</a>
+            <!-- Mobile (text) -->
+            <a href="keranjang.php" class="a1 d-block d-lg-none">Keranjang</a>
+            <a href="login.php" class="a2 d-block d-lg-none">Login</a>
+          </div>
+          <div class="d-flex gap-3 align-items-center ms-auto">
+            <!-- Desktop (icon) -->
+            <a href="keranjang.php" class="d-none d-lg-block">
+              <i class="bi bi-cart3 fs-4"></i>
+            </a>
+            <a href="login.php" class="d-none d-lg-block">
+              <i class="bi bi-person-circle fs-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="py-5">
+        <div class="container text-center">
 
-                    <li class="nav-item"><a class="nav-link" href="tentang.php">Tentang Kami</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Menu</a>
-                        <ul class="dropdown-menu dropdown-menu-white">
-                            <li><a class="dropdown-item" href="paketprasmanan.php">Acara Penikahan</a></li>
-                            <li><a class="dropdown-item" href="paketultah.php">Acara Ulang Tahun</a></li>
-                            <li><a class="dropdown-item" href="paketarisan.php">Arisan</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="layanan.php">Keunggulan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="kontak_kami.php">Kontak Kami</a></li>
-                </ul>
+            <h2 class="fw-bold text-black">Pilih Acara</h2><br>
+            <div  class="row g-4">
+            <div class="col-md-4">
+                    <form action="paketultah.php" method="POST">
+                      <input type="hidden" name="nama_acara" value="Paket Ultah">
+                    <div class="card shadow position-relative">
+                        <img src="imgmenu/ulangtahun.jpg" class="card-img-top" width="100%" height="275">
+                        <div class="card-body">
+                            <h5>Acara Ulang Tahun </h5>
+                            <button type="submit" class="btn btn-success w-100">Pilih</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <form action="paketprasmanan.php" method="POST">
+                      <input type="hidden" name="nama_acara" value="Paket Pernikahan">
+                    <div class="card shadow position-relative">
+                        <img src="imgmenu/pernikahan.jpg" class="card-img-top" width="100%" height="275">
+                        <div class="card-body">
+                            <h5>Acara Pernikahan</h5>
+                            <button type="submit" class="btn btn-success w-100">Pilih</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <form action="paketarisan.php" method="POST">
+                      <input type="hidden" name="nama_acara" value="Paket Arisan">
+                    <div class="card shadow position-relative">
+                        <img src="imgmenu/arisan.jpg" class="card-img-top" width="100%" height="275">
+                        <div class="card-body">
+                            <h5>Acara Arisan</h5>
+                            <button type ="submit" class="btn btn-success w-100">Pilih</button>
+                        </div>
+                    </div>
+                  </form>
+                </div>
             </div>
         </div>
-    </nav>
-    
-    </div>
-    <p>haloo</p>
-    <p>hal2</p>
+    </section>
 
+          <!-- footer -->
+        <div class="row">
+          <div class="col-lg-2 offset-lg-2">
+            <a href="homebenner.php">
+              <img src="headerfooter/logorasa.jpeg" alt="" height="100px" width="auto" />
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="privacy.php">Privacy Policy</a>
+            <br />
+            <a href="terms&condition.php">Terms & Conditions</a>
+          </div>
+          <div class="col-lg-4">
+            <div>
+              <h6>Alamat</h6>
+              <p>
+                Jl. Kutai Utara No.1<br />Kelurahan Sumber, Kecamatan
+                Banjarsari, Kota Surakarta, Jawa Tengah
+              </p>
+            </div>
+
+            <div>
+              <a href="https://wa.me/088221522682" target="_blank">
+                <img src="headerfooter/wa.png" style="height: 60px; width: auto" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@rasa.nusa.caterin7?_r=1&_t=ZS-95t33s4U0Lk"
+                target="_blank"
+                ><img src="headerfooter/tiktok.png" alt="" style="height: 50px; width: auto"
+              /></a>
+              <a
+                href="https://www.instagram.com/rasa.nusacatering?igsh=b2s4bDRpZjJrdjA4"
+                target="_blank"
+                class="link"
+                ><img
+                  src="headerfooter/instagram.png"
+                  alt=""
+                  style="height: 50px; width: auto"
+              /></a>
+            </div>
+
+            <img src="headerfooter/email.png" style="height: 20px; width: auto" />
+            rasanusacatering1@gmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="background-color: orange">
+      <p class="mb-0" style="text-align: center; padding: 20px">
+        @copyright 2026 Rasa Nusa Catering . All rights reserved.
+      </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

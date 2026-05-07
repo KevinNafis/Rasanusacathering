@@ -40,103 +40,52 @@
         margin-top: 8px;
         margin-bottom: 5px;
       }
+
       /* kontak */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.container {
-  max-width: 1100px;
-  margin: auto;
-}
-.header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-.layout {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 40px;
-}
-.form-box {
-  background: #fff;
-  padding: 35px;
-  border-radius: 18px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-}
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+      .header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .layout {
+        display: flex;
+        justify-content: center;
+      }
 
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  outline: none;
-  font-size: 14px;
-}
-button {
-  background: #047857;
-  color: #fff;
-  padding: 15px;
-  border: none;
-  border-radius: 12px;
-  font-weight: bold;
-  cursor: pointer;
-}
-button:hover {
-  background: #054f3a;
-}
-.position {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-.card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 25px;
-}
-.item {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-.item img {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-}
-.item p {
-  font-size: 14px;
-  color: #666;
-}
+      .form-box {
+        background: #fff;
+        padding: 35px;
+        border-radius: 18px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        outline: none;
+        font-size: 14px;
+      }
 
-.link {
-  font-size: 14px;
-  color: #374151;
-  text-decoration: none;
-}
-.link:hover {
-  color: #10b981;
-}
+      button {
+        background: #047857;
+        color: #fff;
+        padding: 15px;
+        border: none;
+        border-radius: 12px;
+        font-weight: bold;
 
-@media (max-width: 900px) {
-  .layout {
-    grid-template-columns: 1fr;
-  }
+      }
+      button:hover {
+        background: #054f3a;
+      }
 
-  .row {
-    grid-template-columns: 1fr;
-  }
-}
     </style>
 </head>
 
@@ -162,7 +111,7 @@ button:hover {
           <div class="navbar-nav mx-auto">
             <a class="nav-link" aria-current="page" href="homebenner.php">Home</a>
             <a class="nav-link" href="tentang.php">Tentang Kami</a>
-            <a class="nav-link" href="menu.html">Menu</a>
+            <a class="nav-link" href="menu.php">Menu</a>
             <a class="nav-link" href="keunggulan.php">Keunggulan</a>
             <a class="nav-link active" href="kontak_kami.php">Kontak Kami</a>
             <!-- Mobile (text) -->
@@ -216,18 +165,13 @@ button:hover {
 
           <label>Pesan</label>
           <textarea rows="5"></textarea>
-            <a href="paketprasmanan.php">
-              <button>Kirim Pesan ke Kami</button>
-            </a>
+              <button type="submit">Kirim Pesan ke Kami</button>
           </form>
         </div>
 
-        
-
-  
       </div>
       
-    </div>
+    </div> <br><br>
   </section>
       <!-- footer -->
         <div class="row">
